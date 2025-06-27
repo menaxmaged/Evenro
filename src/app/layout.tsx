@@ -31,14 +31,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
 
         <div id="Scroll-To-Top" className="page-wrapper">
+          <Header />
 
           {children}
+          <Footer />
 
         </div>
-        <Footer />
       </body>
     </html>
   );

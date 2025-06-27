@@ -15,7 +15,7 @@ export default function HomePage() {
     <>
       {/* You would typically have a Header/Navbar component here 
       */}
-      <main>
+      <main className="main-wrapper">
         <HeroSection />
         <AboutUs />
         <Sponsors />
