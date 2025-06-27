@@ -1,0 +1,85 @@
+// app/components/AboutUs.js
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import PrimaryButton from './PrimaryButton'; // Adjust the import path as necessary
+
+const AboutUs = () => {
+    // Inline styles converted to JSX objects
+    const animatedDivStyle = {
+        opacity: 1, // Set to 1 to be visible by default, animation logic would go here
+        transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
+        transition: 'opacity 0.5s, transform 0.5s', // Basic transition
+    };
+
+    const paragraphStyle = {
+        ...animatedDivStyle,
+        transform: 'translate3d(0, 0, 0)' // Reset transform for initial view
+    }
+
+    return (
+        <section className="about-us-section">
+            <div className="section-gap">
+                <div className="w-layout-blockcontainer container-default w-container">
+                    <div className="about-us-wrapper">
+                        <div
+                            data-w-id="6100b697-e58c-3f67-7b84-18b8903680f4"
+                            style={animatedDivStyle}
+                            className="about-us-video-thumbnail-block"
+                        >
+                            <Image
+                                src="https://cdn.prod.website-files.com/6799ccabec4efd18b16a2f0d/67b551e7dc02d834418eb25f_about-us-thubmnail.jpg"
+                                loading="lazy"
+                                width={1568}
+                                height={882}
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+                                alt="About Us Thumbnail Image"
+                                className="about-us-thumbnail-image"
+                            />
+                            <div data-w-id="382c44de-8ff4-cb8f-37a8-7e741b1a7f9b" className="pay-video-button-wrap center">
+                                {/* NOTE: Lightbox functionality needs a library like 'yet-another-react-lightbox' */}
+                                <Link href="https://www.youtube.com/watch?v=setu9Ir1miY" className="video-button w-inline-block w-lightbox">
+                                    <div className="video-lightbox-icon w-embed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" viewBox="0 0 15 21" fill="none">
+                                            <path d="M13.871 9.71006C14.5445 10.195 14.5445 11.1975 13.871 11.6824L1.97601 20.2468C1.17219 20.8255 0.0507813 20.2511 0.0507813 19.2606L0.0507819 2.13186C0.050782 1.14136 1.17219 0.566934 1.97601 1.14569L13.871 9.71006Z" fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                </Link>
+                                <div className="play-wave-1"></div>
+                                <div className="play-wave-2"></div>
+                            </div>
+                            <div className="about-us-video-thumbnail-overly"></div>
+                        </div>
+                        <div className="about-us-content-block">
+                            <div className="the-event-philosophy-header-content-block">
+                                <div className="section-subtitle">The Event Philosophy</div>
+                                <div className="section-title-wrap">
+                                    <h2 className="section-title">Why <span className="regular-text-span">This Event</span> Matters</h2>
+                                </div>
+                                <p data-w-id="f3968a70-0483-270b-3168-b58699a627fb" style={paragraphStyle} className="the-event-excerpt">
+                                    Secure your place at the forefront of innovation and networking. Don’t miss the chance to connect, learn, and grow with industry leaders and like-minded professionals.
+                                </p>
+                                {/* NOTE: The countdown timer requires state management with useState and useEffect hooks */}
+                                <div data-w-id="742185ff-d1b3-fc59-5137-a09ceb9567fb" style={paragraphStyle} className="about-time-countdown-block">
+                                    {/* Countdown timer logic would be implemented here */}
+                                </div>
+                                <div data-w-id="693f5b8e-bbcc-c76d-fcc1-d7981268a78d" style={paragraphStyle} className="button-block">
+
+                                    <PrimaryButton href="/tickets">
+                                        More About Us                                    </PrimaryButton>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default AboutUs;
