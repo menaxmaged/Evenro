@@ -27,15 +27,18 @@ const AboutUs = () => {
                             style={animatedDivStyle}
                             className="about-us-video-thumbnail-block"
                         >
-                            <Image
-                                src="https://cdn.prod.website-files.com/6799ccabec4efd18b16a2f0d/67b551e7dc02d834418eb25f_about-us-thubmnail.jpg"
-                                loading="lazy"
-                                width={1568}
-                                height={882}
-                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                                alt="About Us Thumbnail Image"
-                                className="about-us-thumbnail-image"
-                            />
+
+                            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAYMC.summit%2Fvideos%2F1033482122249028&show_text=false&width=560"
+                                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                                    scrolling="no"
+                                    frameBorder="0"
+                                    allowFullScreen={true}
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                ></iframe>
+                            </div>
+
                             <div data-w-id="382c44de-8ff4-cb8f-37a8-7e741b1a7f9b" className="pay-video-button-wrap center">
                                 {/* NOTE: Lightbox functionality needs a library like 'yet-another-react-lightbox' */}
                                 <Link href="https://www.youtube.com/watch?v=setu9Ir1miY" className="video-button w-inline-block w-lightbox">

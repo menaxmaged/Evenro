@@ -36,9 +36,9 @@ const HeroSection = () => {
                             className="home-two-hero-block"
                         >
                             <div className="header-meta-block">
-                                <div className="header-meta-text date">February 16, 2025</div>
+                                <div className="header-meta-text date">16 فبراير 2025</div>
                                 <div className="header-meta-text line">|</div>
-                                <div className="header-meta-text location">                                    من مدينة العلمين الجديدة
+                                <div className="header-meta-text location">                                     مدينة العلمين الجديدة
                                 </div>
                             </div>
                             <div className="home-two-hero-header-with-title-block">
@@ -47,14 +47,12 @@ const HeroSection = () => {
                                     </h1>
 
 
-                                    <h1 className="home-two-hero-title" >  كونو علي
-                                        <span className="regular-text-span">الموعد </span>
+                                    <h1 className="home-two-hero-title" >كونو على <span className="regular-text-span">الموعد</span>
                                         !  </h1>
                                 </div>
                                 <div className="button-block">
                                     <PrimaryButton href="/tickets">
-                                        Buy Ticket
-                                    </PrimaryButton>                                </div>
+                                        احجز الآن                                    </PrimaryButton>                                </div>
                             </div>
                             <div className="home-two-hero-weave-shape-wrap">
                                 <Image

@@ -1,21 +1,22 @@
 // app/components/Footer.js
 import Image from 'next/image';
 import Link from 'next/link';
+import PrimaryButton from './PrimaryButton';
 
 // Data for navigation links to keep the component clean
 const footerLinks = [
-    { href: '/', text: 'Home' },
-    { href: '/agenda', text: 'Agenda' },
-    { href: '/template-info/style-guide', text: 'Style Guide' },
-    { href: '/template-info/licenses', text: 'Licenses' },
-    { href: '/template-info/changelog', text: 'Changelog' },
+    { href: '/', text: 'الرئيسية' },
+    { href: '/agenda', text: 'الجدول' },
+    { href: '/template-info/style-guide', text: 'دليل النمط' },
+    { href: '/template-info/licenses', text: 'التراخيص' },
+    { href: '/template-info/changelog', text: 'سجل التغييرات' },
 ];
 
 // Data for social media links
 const socialLinks = [
-    { href: 'https://www.instagram.com/', text: 'IG' },
-    { href: 'https://x.com/', text: 'TW' },
-    { href: 'https://www.facebook.com/', text: 'FB' },
+    { href: 'https://www.instagram.com/', text: 'انستغرام' },
+    { href: 'https://x.com/', text: 'تويتر' },
+    { href: 'https://www.facebook.com/', text: 'فيسبوك' },
 ];
 
 const Footer = () => {
@@ -27,20 +28,14 @@ const Footer = () => {
                     <div className="footer-cta-overly-bg"></div>
                     <div className="footer-cta-content-block">
                         <div className="cta-header-block">
-                            <h2 className="cta-header">Reserve Your Tickets For The Event</h2>
+                            <h2 className="cta-header">احجز تذاكرك للفعالية</h2>
                         </div>
                         <div className="cta-button-wrap">
-                            <Link href="/tickets" className="primary-button w-inline-block">
-                                <div className="button-content-block front">
-                                    <div className="button-text">Buy Ticket</div>
-                                    <div className="button-icon w-embed">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
-                                            <path d="M13.5 5.0005H1.5M9.5 9L12.8322 5.9797C13.7226 5.1727 13.7226 4.8273 12.8322 4.0203L9.5 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div className="button-gradient-bg"></div>
-                            </Link>
+                            <PrimaryButton href="/tickets">
+
+
+                                احجز الآن
+                            </PrimaryButton>
                         </div>
                     </div>
                 </div>
@@ -56,16 +51,16 @@ const Footer = () => {
                                     <Image
                                         loading="lazy"
                                         src="/logoo.png"
-                                        alt="Brand Logo"
+                                        alt="شعار العلامة التجارية"
                                         width={130}
                                         height={35}
                                         className="footer-brand-logo"
                                     />
                                 </Link>
                                 <div className="footer-meta-block">
-                                    <div className="footer-meta-text date">The Glasshouse, NY</div>
+                                    <div className="footer-meta-text date">مدينة العلمين الجديدة</div>
                                     <div className="footer-meta-text line">|</div>
-                                    <div className="footer-meta-text date">February 16, 2025</div>
+                                    <div className="footer-meta-text date">16 فبراير 2025</div>
                                 </div>
                             </div>
                             <div className="footer-menu-link-block margin-top-70px">
@@ -85,11 +80,14 @@ const Footer = () => {
                         </div>
                         <div className="footer-lower-block">
                             <div className="footer-copyright-text">
-                                جميع الحقوق محفوظة  <a href="https://brandbes.com/webflow-templates" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">
+                                جميع الحقوق محفوظة
+                                <a href="https://brandbes.com/webflow-templates" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">
                                 </a>
                             </div>
                             <div className="footer-copyright-text">
-                                <a href="https://webflow.com/templates/designers/brandbes" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">قمة الابداع الاعلامي</a>
+                                <a href="https://webflow.com/templates/designers/brandbes" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">
+                                    قمة الإبداع الإعلامي
+                                </a>
                             </div>
                         </div>
                     </div>

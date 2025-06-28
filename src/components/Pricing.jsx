@@ -46,7 +46,7 @@ const pricingPlans = [
 
 const Pricing = () => {
     return (
-        <section className="ticket-pricing-section" dir="rtl">
+        <section className="ticket-pricing-section">
             <div className="section-gap-top">
                 <div className="w-layout-blockcontainer container-default w-container">
                     <div className="section-header-block center-align">
@@ -87,6 +87,12 @@ const Pricing = () => {
                                                     </div>
                                                 </div>
                                                 <div className="ticket-card-price-block">
+                                                    <div className="ticket-price-rate">${plan.price}</div>
+                                                    <div className="ticket-card-button-wrap">
+                                                        <PrimaryButton href={plan.link} className="ticket-card-button">
+                                                            شراء
+                                                        </PrimaryButton>
+                                                    </div>
                                                     <div className="ticket-divider-block">
                                                         <div className="ticket-divider-border"></div>
                                                         <div className="divider-circle-wrap">
@@ -95,12 +101,7 @@ const Pricing = () => {
                                                             <div className="ticket-divider-circle-block bottom"></div>
                                                         </div>
                                                     </div>
-                                                    <div className="ticket-price-rate">${plan.price}</div>
-                                                    <div className="ticket-card-button-wrap">
-                                                        <PrimaryButton href={plan.link} className="ticket-card-button">
-                                                            شراء
-                                                        </PrimaryButton>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>

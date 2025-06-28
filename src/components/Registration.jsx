@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 const Registration = () => {
     // --- Countdown Timer Logic ---
     const calculateTimeLeft = () => {
-        // Set a future date for the event
         const difference = +new Date('2026-01-01T00:00:00') - +new Date();
         let timeLeft = {};
 
@@ -27,7 +26,6 @@ const Registration = () => {
         const timer = setTimeout(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
-        // Clear timeout if the component is unmounted
         return () => clearTimeout(timer);
     });
 
@@ -39,7 +37,7 @@ const Registration = () => {
         location: ''
     });
 
-    const [formStatus, setFormStatus] = useState(''); // for success/error messages
+    const [formStatus, setFormStatus] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -51,14 +49,11 @@ const Registration = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormStatus('Submitting...');
-        // Here you would typically send the data to an API endpoint
+        setFormStatus('جاري الإرسال...');
         console.log("Form Data Submitted: ", formData);
 
-        // Simulate an API call
         setTimeout(() => {
-            setFormStatus('Thank you! Your submission has been received!');
-            // Reset form
+            setFormStatus('شكراً لك! تم استلام بياناتك بنجاح!');
             setFormData({ name: '', email: '', phone: '', location: '' });
         }, 1500);
     };
@@ -70,25 +65,25 @@ const Registration = () => {
                 <div className="w-layout-blockcontainer container-default w-container">
                     <div className="registration-content-block">
                         <div className="section-header-block left-align">
-                            <div className="section-subtitle">Registration Section</div>
+                            <div className="section-subtitle">قسم التسجيل</div>
                             <div className="section-title-wrap">
-                                <h2 className="section-title">Reserve <span className="regular-text-span">Your Spot</span> Today!</h2>
+                                <h2 className="section-title">احجز <span className="regular-text-span">مكانك</span> اليوم!</h2>
                             </div>
                         </div>
                         <p className="registration-section-excerpt">
-                            Secure your place at the forefront of innovation and networking. Don’t miss the chance to connect, learn, and grow.
+                            ضمن مكانك في طليعة الابتكار والتواصل. لا تفوت فرصة التواصل والتعلم والنمو.
                         </p>
                         {/* Live Countdown Timer */}
                         <div className="registration-time-countdown-block">
                             <div className="registration-time-block">
                                 <div className="registration-time-block-flex">
-                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.days || '0'}</div><div className="fun-fact-heading-text">Days</div></div>
+                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.days || '0'}</div><div className="fun-fact-heading-text">أيام</div></div>
                                     <div className="registration-time-semicolon">:</div>
-                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.hours || '0'}</div><div className="fun-fact-heading-text">Hours</div></div>
+                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.hours || '0'}</div><div className="fun-fact-heading-text">ساعات</div></div>
                                     <div className="registration-time-semicolon">:</div>
-                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.minutes || '0'}</div><div className="fun-fact-heading-text">Minutes</div></div>
+                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.minutes || '0'}</div><div className="fun-fact-heading-text">دقائق</div></div>
                                     <div className="registration-time-semicolon">:</div>
-                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.seconds || '0'}</div><div className="fun-fact-heading-text">Seconds</div></div>
+                                    <div className="registration-time-wrap"><div className="fun-fact-number">{timeLeft.seconds || '0'}</div><div className="fun-fact-heading-text">ثواني</div></div>
                                 </div>
                             </div>
                             <div className="registration-time-countdown-block-bg"></div>
@@ -97,13 +92,13 @@ const Registration = () => {
                 </div>
                 <div className="registration-input-field">
                     <div className="registration-form-block w-form">
-                        <h3 className="registration-form-title">Fill the Form Below</h3>
+                        <h3 className="registration-form-title">املأ النموذج أدناه</h3>
                         <form onSubmit={handleSubmit} className="registration-form">
                             <input
                                 className="registration-form-text-field w-input"
                                 type="text"
                                 name="name"
-                                placeholder="Your Name"
+                                placeholder="اسمك"
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
@@ -112,7 +107,7 @@ const Registration = () => {
                                 className="registration-form-text-field w-input"
                                 type="email"
                                 name="email"
-                                placeholder="Your Email"
+                                placeholder="بريدك الإلكتروني"
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
@@ -121,7 +116,7 @@ const Registration = () => {
                                 className="registration-form-text-field w-input"
                                 type="tel"
                                 name="phone"
-                                placeholder="Phone Number"
+                                placeholder="رقم الهاتف"
                                 value={formData.phone}
                                 onChange={handleChange}
                                 required
@@ -130,13 +125,13 @@ const Registration = () => {
                                 className="registration-form-text-field w-input"
                                 type="text"
                                 name="location"
-                                placeholder="Location"
+                                placeholder="الموقع"
                                 value={formData.location}
                                 onChange={handleChange}
                                 required
                             />
                             <div className="submit-button-block">
-                                <input type="submit" data-wait="Please wait..." className="submit-button w-button" value="Submit" />
+                                <input type="submit" data-wait="يرجى الانتظار..." className="submit-button w-button" value="إرسال" />
                             </div>
                         </form>
                         {formStatus && (
