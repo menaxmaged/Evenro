@@ -6,9 +6,6 @@ import PrimaryButton from './PrimaryButton';
 // Data for navigation links to keep the component clean
 const footerLinks = [
     { href: '/', text: 'الرئيسية' },
-    { href: '/agenda', text: 'الجدول' },
-    { href: '/template-info/style-guide', text: 'دليل النمط' },
-    { href: '/template-info/licenses', text: 'التراخيص' },
     { href: '/template-info/changelog', text: 'سجل التغييرات' },
 ];
 
