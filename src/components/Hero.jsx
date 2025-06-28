@@ -38,14 +38,18 @@ const HeroSection = () => {
                             <div className="header-meta-block">
                                 <div className="header-meta-text date">February 16, 2025</div>
                                 <div className="header-meta-text line">|</div>
-                                <div className="header-meta-text location">The Glasshouse, NY</div>
+                                <div className="header-meta-text location">                                    من مدينة العلمين الجديدة
+                                </div>
                             </div>
                             <div className="home-two-hero-header-with-title-block">
                                 <div className="home-two-hero-title-block">
-                                    <h1 className="home-two-hero-title">The Future of</h1>
-                                    <h1 className="home-two-hero-title">
-                                        <span className="regular-text-span">Data & AI</span> Starts Here
+                                    <h1 className="home-two-hero-title">قمة الإبداع الإعلامي للشباب العربي" تعود في نسختها الثانية | ٢٠٢٥
                                     </h1>
+
+
+                                    <h1 className="home-two-hero-title" >  كونو علي
+                                        <span className="regular-text-span">الموعد </span>
+                                        !  </h1>
                                 </div>
                                 <div className="button-block">
                                     <PrimaryButton href="/tickets">

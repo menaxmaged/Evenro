@@ -42,7 +42,7 @@ const Header = () => {
                         <Link href="/" aria-current="page" className="navbar-brand w-nav-brand w--current">
                             <Image
                                 loading="lazy"
-                                src="https://cdn.prod.website-files.com/6799ccabec4efd18b16a2f0d/6799ef0e6c9e8e47bed6a657_664c3cb3d26da8596d293fd6d6b12572_brand-logo.png"
+                                src="/logoo.png"
                                 alt="Nav Menu Logo"
                                 width={130}
                                 height={35}
@@ -57,7 +57,7 @@ const Header = () => {
                             >
                                 <div className="hamburger-menu-text-wrap">
                                     {/* Dynamically show Menu or Close text */}
-                                    <div className="hamburger-text" style={{ display: isMenuOpen ? 'none' : 'block' }}>Menu</div>
+                                    <div className="hamburger-text" style={{ display: isMenuOpen ? 'none' : 'block' }}>القائمة</div>
                                     <div className="hamburger-closed-text" style={{ display: isMenuOpen ? 'block' : 'none' }}>Close</div>
                                 </div>
                             </div>

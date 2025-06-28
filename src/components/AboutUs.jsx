@@ -57,8 +57,11 @@ const AboutUs = () => {
                                     <h2 className="section-title">Why <span className="regular-text-span">This Event</span> Matters</h2>
                                 </div>
                                 <p data-w-id="f3968a70-0483-270b-3168-b58699a627fb" style={paragraphStyle} className="the-event-excerpt">
-                                    Secure your place at the forefront of innovation and networking. Don’t miss the chance to connect, learn, and grow with industry leaders and like-minded professionals.
-                                </p>
+                                    بعد النجاح الباهر للنسخة الأولى من قِمة الإبداعِ الإعلامي للشَّباب العربي ٢٠٢٤، نعود إليكم هذا العام بنسخةٍ جديدة واستثنائية تنطلق من قلب مدينة العلمين، مصر،
+                                    تحت شعار "إعلامٌ مبتكر، أعمالٌ رائدة"،
+                                    في هذهِ النُسخة نُناقش الدور المُتجدد للإعلام في تشكيل مستقبل الصناعات والأعمال في مصر والشرق الأوسط.
+                                    ترقّبوا تجربةً مُلهمة، وأفكارًا خلاقة، وفرصًا لا تُفوّت !
+                                    كونوا على الموعد ..!                                </p>
                                 {/* NOTE: The countdown timer requires state management with useState and useEffect hooks */}
                                 <div data-w-id="742185ff-d1b3-fc59-5137-a09ceb9567fb" style={paragraphStyle} className="about-time-countdown-block">
                                     {/* Countdown timer logic would be implemented here */}

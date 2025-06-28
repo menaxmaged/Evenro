@@ -55,7 +55,7 @@ const Footer = () => {
                                 <Link href="/" aria-current="page" className="footer-brand w-inline-block w--current">
                                     <Image
                                         loading="lazy"
-                                        src="https://cdn.prod.website-files.com/6799ccabec4efd18b16a2f0d/6799ef0e6c9e8e47bed6a657_664c3cb3d26da8596d293fd6d6b12572_brand-logo.png"
+                                        src="/logoo.png"
                                         alt="Brand Logo"
                                         width={130}
                                         height={35}
@@ -85,10 +85,11 @@ const Footer = () => {
                         </div>
                         <div className="footer-lower-block">
                             <div className="footer-copyright-text">
-                                Copyright © Evenro | Designed by <a href="https://brandbes.com/webflow-templates" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">Brandbes</a>
+                                جميع الحقوق محفوظة  <a href="https://brandbes.com/webflow-templates" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">
+                                </a>
                             </div>
                             <div className="footer-copyright-text">
-                                Powered by <a href="https://webflow.com/templates/designers/brandbes" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">Webflow</a>
+                                <a href="https://webflow.com/templates/designers/brandbes" target="_blank" rel="noopener noreferrer" className="footer-copyright-link">قمة الابداع الاعلامي</a>
                             </div>
                         </div>
                     </div>

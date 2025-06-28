@@ -18,14 +18,10 @@ export default function HomePage() {
       <main className="main-wrapper">
         <HeroSection />
         <AboutUs />
-        <Sponsors />
         <Highlights />
-        <Speakers />
-        <Agenda />
-        <Testimonials />
         <Registration />
         <Pricing />
-        <Faq />
+        <br />
       </main>
       {/* You would typically have a Footer component here 
       */}

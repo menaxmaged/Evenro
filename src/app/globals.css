@@ -16,10 +16,20 @@
   :root {}
 }
 
+@font-face {
+  font-family: "GE SS Two Medium";
+  src: url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.eot");
+  src: url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.svg#GE SS Two Medium")format("svg");
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "GE SS Two Medium" !important;
 }
 
 /* /app/globals.css */
