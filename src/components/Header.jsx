@@ -55,9 +55,9 @@ const Header = () => {
                                 className="nav-button-wrapper"
                                 style={{ cursor: 'pointer' }}
                             >
-                                <div className="hamburger-menu-text-wrap">
+                                <div className="hamburger-menu-text-wrap " style={{ display: 'none' }} >
                                     {/* Dynamically show Menu or Close text */}
-                                    <div className="hamburger-text" style={{ display: isMenuOpen ? 'none' : 'block' }}>القائمة</div>
+                                    < div className="hamburger-text" style={{ display: isMenuOpen ? 'none' : 'block' }}>القائمة</div>
                                     <div className="hamburger-closed-text" style={{ display: isMenuOpen ? 'block' : 'none' }}>Close</div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </header>
+        </header >
     );
 };
 
