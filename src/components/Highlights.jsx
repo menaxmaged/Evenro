@@ -2,14 +2,14 @@
 import Image from 'next/image';
 
 const highlightsData = [
-    { title: "Keynote Addresses", description: "Inspiring talks from world-renowned leaders in Data Science and AI." },
-    { title: "Expert-Led Workshops", description: "Hands-on sessions designed to deepen your skills and knowledge." },
-    { title: "Networking Opportunities", description: "Connect with industry peers, and innovators from around the globe." },
-    { title: "Innovative Product Demos", description: "Experience cutting-edge tools and technologies shaping the future." },
-    { title: "AI Showcase Zone", description: "Explore innovative AI applications and solutions from top companies." },
-    { title: "Panel Discussions", description: "Engage in insightful conversations led by industry leaders." },
-    { title: "Interactive Q&A Sessions", description: "Engage directly with industry leading experts in interactive Q&A." },
-    { title: "Awards and Recognition", description: "Our exclusive awards recognition program, honoring groundbreaking." }
+    { title: "الكلمات الرئيسية", description: "خطابات ملهمة من قادة عالميين في علوم البيانات والذكاء الاصطناعي." },
+    { title: "ورش عمل بقيادة خبراء", description: "جلسات عملية تهدف إلى تعميق مهاراتك ومعرفتك." },
+    { title: "فرص التواصل", description: "تواصل مع أقران الصناعة والمبتكرين من جميع أنحاء العالم." },
+    { title: "عروض المنتجات المبتكرة", description: "اكتشف الأدوات والتقنيات الحديثة التي تشكل المستقبل." },
+    { title: "منطقة عرض الذكاء الاصطناعي", description: "استكشف تطبيقات وحلول الذكاء الاصطناعي المبتكرة من أفضل الشركات." },
+    { title: "جلسات النقاش", description: "شارك في محادثات ثرية يقودها قادة الصناعة." },
+    { title: "جلسات الأسئلة والأجوبة التفاعلية", description: "تفاعل مباشرة مع خبراء الصناعة الرائدين في جلسات تفاعلية." },
+    { title: "الجوائز والتكريم", description: "برنامج جوائز حصري لتكريم الإنجازات الرائدة." }
 ];
 
 const Highlights = () => {
@@ -19,9 +19,9 @@ const Highlights = () => {
                 <div className="w-layout-blockcontainer container-default w-container">
                     <div className="home-two-event-highlights-wrapper">
                         <div className="section-header-block left-align margin-bottom-70px">
-                            <div className="section-subtitle">Event Highlights</div>
+                            <div className="section-subtitle">أبرز الفعاليات</div>
                             <div className="section-title-wrap">
-                                <h2 className="section-title">Unmissable Moments <span className="regular-text-span">At Evenro</span></h2>
+                                <h2 className="section-title">لحظات لا تُفوّت <span className="regular-text-span">في إفنرو</span></h2>
                             </div>
                         </div>
                         <div className="home-two-event-highlight-block">
@@ -33,7 +33,7 @@ const Highlights = () => {
                                         width={1068}
                                         height={712}
                                         sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                                        alt="Event Highlight Thumbnail"
+                                        alt="صورة أبرز الفعاليات"
                                         className="event-highlight-thumbnail animated-image"
                                     />
                                 </div>
