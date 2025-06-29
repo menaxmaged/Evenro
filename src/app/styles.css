@@ -7965,6 +7965,10 @@ figure {
     padding: 24px 26px;
   }
 
+  .home-two-hero-title-block {
+    max-width: 85% !important;
+  }
+
   .margin-top-50px {
     margin-top: 40px;
   }
@@ -9766,7 +9770,7 @@ figure {
   }
 
   .home-two-hero-header-with-title-block {
-    max-width: 660px;
+    max-width: 800px;
   }
 
   .home-two-hero-title {
