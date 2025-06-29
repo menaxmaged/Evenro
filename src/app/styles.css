@@ -5966,7 +5966,7 @@ figure {
 .ticket-card-block-three-bg {
   background-color: var(--color--secondary-bg-02);
   opacity: .7;
-  background-image: linear-gradient(#0003, #0003), linear-gradient(140deg, #1ff8c5d9 .55%, #1b59cde6 74.97%);
+  background-image: linear-gradient(#0003, #0003), linear-gradient(140deg, #E3B02B .55%, #F1E77C 74.97%);
   border-radius: 12px;
   width: 100%;
   height: 100%;
@@ -6089,7 +6089,7 @@ figure {
 .ticket-card-block-two-bg {
   background-color: var(--color--secondary-bg-02);
   opacity: .7;
-  background-image: linear-gradient(#0003, #0003), linear-gradient(140deg, #1b59cd, #1ff8c5cc);
+  background-image: linear-gradient(#0003, #0003), linear-gradient(140deg, #E3B02B, #F1E77C);
   border-radius: 12px;
   width: 100%;
   height: 100%;
@@ -6100,7 +6100,7 @@ figure {
 .ticket-card-block-one-bg {
   background-color: var(--color--secondary-bg-02);
   opacity: .7;
-  background-image: linear-gradient(#0003, #0003), linear-gradient(45deg, #1ff8c5d9 .55%, #1b59cde6 74.97%);
+  background-image: linear-gradient(#0003, #0003), linear-gradient(45deg, #E3B02B .55%, #F1E77C 74.97%);
   border-radius: 12px;
   width: 100%;
   height: 100%;
@@ -7743,7 +7743,7 @@ figure {
 .footer-cta-overly-bg {
   opacity: .6;
   filter: blur(100px);
-  background-image: linear-gradient(129deg, #1ff8c5 7.44%, #1b59cd 73.67%);
+  background-image: linear-gradient(129deg, #E3B02B 7.44%, #F1E77C 73.67%);
   border-radius: 100%;
   width: 850px;
   height: 280px;

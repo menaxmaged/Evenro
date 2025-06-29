@@ -55,9 +55,9 @@ const AboutUs = () => {
                         </div>
                         <div className="about-us-content-block">
                             <div className="the-event-philosophy-header-content-block">
-                                <div className="section-subtitle">The Event Philosophy</div>
+                                <div className="section-subtitle">فلسفة الحدث</div>
                                 <div className="section-title-wrap">
-                                    <h2 className="section-title">Why <span className="regular-text-span">This Event</span> Matters</h2>
+                                    <h2 className="section-title">لماذا <span className="regular-text-span">هذا الحدث</span> مهم؟</h2>
                                 </div>
                                 <p data-w-id="f3968a70-0483-270b-3168-b58699a627fb" style={paragraphStyle} className="the-event-excerpt">
                                     بعد النجاح الباهر للنسخة الأولى من قِمة الإبداعِ الإعلامي للشَّباب العربي ٢٠٢٤، نعود إليكم هذا العام بنسخةٍ جديدة واستثنائية تنطلق من قلب مدينة العلمين، مصر،
@@ -67,16 +67,13 @@ const AboutUs = () => {
                                     كونوا على الموعد ..!                                </p>
                                 {/* NOTE: The countdown timer requires state management with useState and useEffect hooks */}
                                 <div data-w-id="742185ff-d1b3-fc59-5137-a09ceb9567fb" style={paragraphStyle} className="about-time-countdown-block">
-                                    {/* Countdown timer logic would be implemented here */}
+                                    {/* سيتم إضافة عداد تنازلي هنا */}
                                 </div>
                                 <div data-w-id="693f5b8e-bbcc-c76d-fcc1-d7981268a78d" style={paragraphStyle} className="button-block">
 
                                     <PrimaryButton href="/tickets">
-                                        More About Us                                    </PrimaryButton>
-
-
-
-
+                                        المزيد عنا
+                                    </PrimaryButton>
 
                                 </div>
                             </div>
